@@ -55,7 +55,7 @@ public class FutureCallableExample {
 
         @Override
         public Double call() {
-            return Math.sqrt(side1*side1 +side2*side2);
+            return Math.sqrt(side1*side1 + side2*side2);
         }
     }
 

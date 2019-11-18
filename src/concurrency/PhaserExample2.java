@@ -20,7 +20,7 @@ public class PhaserExample2 {
     static class MyPhaser extends Phaser{
         int numPhases;
 
-        public MyPhaser(int parties, int phaseCount) {
+        MyPhaser(int parties, int phaseCount) {
             super(parties);
             numPhases = phaseCount - 1;
         }
@@ -36,7 +36,7 @@ public class PhaserExample2 {
         Phaser phaser;
         String name;
 
-        public MyThread(Phaser phaser, String name) {
+        MyThread(Phaser phaser, String name) {
             this.phaser = phaser;
             this.name = name;
             phaser.register();

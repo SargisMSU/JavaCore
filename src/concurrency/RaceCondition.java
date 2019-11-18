@@ -12,7 +12,7 @@ public class RaceCondition {
     private static class Incrementor {
         int i = 0;
 
-        void act() {
+        synchronized void act() {
             for (int j = 0; j < 10; j++) {
                 System.out.println(i++);
             }
